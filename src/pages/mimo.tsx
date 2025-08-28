@@ -1,17 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
-import mimoLogo from "../assets/mimoLogo.png";
-import keychain1 from "../assets/keychain1.jpg";
-import keychain2 from "../assets/keychain2.jpg";
-import keychain3 from "../assets/keychain3.jpg";
 
 const Mimo: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const collections = [
-    { src: keychain2, alt: "Keychain 2" },
-    { src: keychain3, alt: "Keychain 3" },
-    { src: keychain1, alt: "Keychain 1" },
+    { src: "img/keychain2.jpg", alt: "Keychain 2" },
+    { src: "img/keychain3.jpg", alt: "Keychain 3" },
+    { src: "img/keychain1.jpg", alt: "Keychain 1" },
   ];
 
   return (
@@ -116,7 +112,7 @@ const Mimo: React.FC = () => {
                 {/* Main Miffy Character */}
                 <div className="w-80 h-60 lg:w-60 lg:h-80x flex items-center justify-center">
                   <img
-                    src={mimoLogo}
+                    src={"img/mimoLogo.png"}
                     alt="Deskripsi gambar"
                     className="w-full object-cover h-78 "
                   />

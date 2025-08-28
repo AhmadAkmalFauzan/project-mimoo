@@ -1,19 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
-import mimoLogo from "../assets/mimoLogo.png";
-import keychain1 from "../assets/keychain1.jpg";
-import keychain2 from "../assets/keychain2.jpg";
-import keychain3 from "../assets/keychain3.jpg";
-import example from "../assets/example.jpg";
-import printer from "../assets/printer.png";
-import fotocopy from "../assets/fotocopy.png";
 
 const Catalog: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const collections = [
-    { src: printer, alt: "printer" },
-    { src: fotocopy, alt: "fotocopy" },
+    { src: "img/printer.png", alt: "printer" },
+    { src: "img/fotocopy.png", alt: "fotocopy" },
   ];
 
   return (
@@ -110,7 +103,7 @@ const Catalog: React.FC = () => {
                 </h1>
                 {/* Gambar utama */}
                 <img
-                  src={example}
+                  src={"img/example.jpg"}
                   alt="Keychain"
                   className="rounded-lg shadow-md"
                 />
@@ -133,7 +126,7 @@ const Catalog: React.FC = () => {
                 {/* Main Miffy Character */}
                 <div className="w-80 h-60 lg:w-60 lg:h-80x flex items-center justify-center">
                   <img
-                    src={mimoLogo}
+                    src={"img/mimoLogo.png"}
                     alt="Deskripsi gambar"
                     className="w-full object-cover h-78 mb-10"
                   />
