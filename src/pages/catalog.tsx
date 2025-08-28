@@ -98,7 +98,7 @@ const Catalog: React.FC = () => {
             <div className="space-y-8 lg:space-y-12 mt-4">
               {/*  */}
 
-              <div className="bg-gray-100 rounded-2xl shadow-lg p-4 w-[320px] flex flex-col items-center ml-8">
+              <div className="bg-gray-100 rounded-2xl shadow-lg p-4 w-[320px] flex flex-col items-center ml-4">
                 <h1 className="text-3xl  text-center font-black text-gray-900 leading-tight tracking-tight mb-4 ">
                   OUR MAIN MENU
                 </h1>
