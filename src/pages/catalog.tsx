@@ -35,7 +35,7 @@ const Catalog: React.FC = () => {
             Catalog
           </a>
           <a
-            href="#about"
+            href="about"
             className="relative font-semibold text-lg transition-colors hover:text-gray-900 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#cde3f5] after:transition-all after:duration-300 hover:after:w-full"
           >
             About
@@ -61,7 +61,7 @@ const Catalog: React.FC = () => {
           <div className="absolute top-full left-0 right-0 bg-white/95 backdrop-blur-sm p-6 md:hidden z-50 border-b border-white/30">
             <div className="flex flex-col space-y-4">
               <a
-                href="home"
+                href="/"
                 className="text-gray-800 font-semibold text-left py-2 px-4 rounded-lg transition-colors hover:bg-[#cde3f5]"
               >
                 Home
@@ -132,9 +132,9 @@ const Catalog: React.FC = () => {
                   />
                 </div>
                 {/* Decorative Elements */}
-                <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-200/50 rounded-full animate-bounce delay-100"></div>
-                <div className="absolute -bottom-6 -left-6 w-6 h-6 bg-pink-200/50 rounded-full animate-bounce delay-300"></div>
-                <div className="absolute top-1/4 -left-8 w-4 h-4 bg-purple-200/50 rounded-full animate-bounce delay-500"></div>
+                <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-200/50 rounded-full animate-bounce delay-100 mb-6"></div>
+                <div className="absolute -bottom-6 -left-6 w-6 h-6 bg-pink-200/50 rounded-full animate-bounce delay-300 mb-8"></div>
+                <div className="absolute top-1/4 -left-8 w-4 h-4 bg-purple-200/50 rounded-full animate-bounce delay-500 mb-6"></div>
               </div>
             </div>
           </div>

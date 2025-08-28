@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
-const Mimo: React.FC = () => {
+const About: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const collections = [
     { src: "img/keychain2.jpg", alt: "Keychain 2" },
@@ -100,8 +100,29 @@ const Mimo: React.FC = () => {
                 <h1 className="text-5xl lg:text-6x2 text-center font-black text-gray-900 leading-tight tracking-tight mb-4">
                   MINI MOOOOOOOD
                 </h1>
-                <p className="text-lg lg:text-xl text-gray-600 font-medium tracking-wide text-center">
-                  custom keychain
+                <h2 className="text-lg font-semibold text-gray-800 text-center">
+                  Haloo, selamat datang di Mini Mood! 🐮💖
+                </h2>
+
+                <p className="text-gray-600 leading-relaxed text-center">
+                  Kami percaya kalau hal kecil bisa bikin hati jadi lebih
+                  hangat. Atmin menyediakan custom keychain murah & lucu yang
+                  bisa kamu desain sendiri sesuai keinginan. Foto bebas, desain
+                  suka-suka – kamu bisa pakai foto, ilustrasi, atau tulisan
+                  favoritmu!
+                  <span className="block mt-2 font-bold text-pink-600 text-center">
+                    mulai dari Rp5.000 aja!
+                  </span>
+                </p>
+
+                <p className="text-gray-600 italic text-center">
+                  Cocok banget buat kado, hadiah sahabat, atau koleksi pribadi
+                  &gt;.&lt;
+                </p>
+
+                <p className="mt-6 font-medium text-gray-900 italic mb-8 text-center">
+                  Mini Mood hadir supaya kamu bisa bawa sedikit mood ke mana pun
+                  kamu pergi 🌸
                 </p>
               </div>
             </div>
@@ -114,13 +135,13 @@ const Mimo: React.FC = () => {
                   <img
                     src={"img/mimoLogo.png"}
                     alt="Deskripsi gambar"
-                    className="w-full object-cover h-78 "
+                    className="w-full object-cover h-78 mb-12"
                   />
                 </div>
 
                 {/* Decorative Elements */}
                 <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-200/50 rounded-full animate-bounce delay-100 mb-6"></div>
-                <div className="absolute -bottom-6 -left-6 w-6 h-6 bg-pink-200/50 rounded-full animate-bounce delay-300 mb-8" ></div>
+                <div className="absolute -bottom-6 -left-6 w-6 h-6 bg-pink-200/50 rounded-full animate-bounce delay-300 mb-8"></div>
                 <div className="absolute top-1/4 -left-8 w-4 h-4 bg-purple-200/50 rounded-full animate-bounce delay-500 mb-6"></div>
               </div>
             </div>
@@ -129,37 +150,8 @@ const Mimo: React.FC = () => {
 
         <div className="bg-white text-center font-sans">
           {/* OUR COLLECTION */}
-          <section className="py-10">
-            <h2 className="text-2xl font-bold mb-1">Galeri Atmin</h2>
-            <p className="text-gray-600 italic mb-6">Start from 5k !!!</p>
-
-            <div className="bg-blue-100 rounded-xl max-w-5xl mx-auto p-6 flex flex-col md:flex-row gap-6 justify-center">
-              {collections.map((item, idx) => (
-                <div
-                  key={idx}
-                  className="overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-2xl"
-                >
-                  <img
-                    src={item.src}
-                    alt={item.alt}
-                    className="w-full h-60 object-cover transition-transform duration-500 hover:scale-110"
-                  />
-                </div>
-              ))}
-            </div>
-          </section>
 
           {/* OUR PHILOSOPHY */}
-          <section className="max-w-4xl mx-auto px-4 py-12">
-            <h2 className="text-xl font-bold mb-4">PESAN ATMIN</h2>
-            <p className="text-gray-700 leading-relaxed">
-              Kita percaya tiap momen tuh punya ceritanya sendiri.Mini Mood ada
-              buat ngabadin cerita itu jadi gantungan kunci akrilik yang cute,
-              aesthetic, dan totally personal. Dari foto favorit sampe detail
-              kecilnya, semua dibuat biar kamu bisa bawa kenangan seru ke mana
-              pun kamu pergi.
-            </p>
-          </section>
 
           {/* FOOTER */}
           <footer className="bg-gray-900 text-white py-8">
@@ -173,7 +165,7 @@ const Mimo: React.FC = () => {
               </p>
               <div className="flex gap-4 text-gray-400 text-2xl">
                 <a
-                  href="https://www.instagram.com/mm.minimood?utm_source=ig_web_button_share_sheet&igsh=MWlyaDU3eTg0N3cyaQ==" 
+                  href="https://www.instagram.com/mm.minimood?utm_source=ig_web_button_share_sheet&igsh=MWlyaDU3eTg0N3cyaQ=="
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -181,7 +173,7 @@ const Mimo: React.FC = () => {
                 </a>
 
                 <a
-                  href="https://wa.me/+6285719005632" 
+                  href="https://wa.me/+6285719005632"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -196,4 +188,4 @@ const Mimo: React.FC = () => {
   );
 };
 
-export default Mimo;
+export default About;
