@@ -6,7 +6,7 @@
     return (
       <BrowserRouter>
         <Routes>
-          <Route path="/home" element={<Mimo />} />
+          <Route path="/" element={<Mimo />} />
           <Route path="/catalog" element={<Catalog />} />
         </Routes>
       </BrowserRouter>
