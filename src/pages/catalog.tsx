@@ -23,7 +23,7 @@ const Catalog: React.FC = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-10 text-gray-800">
           <a
-            href="home"
+            href="/"
             className="relative font-semibold text-lg transition-colors hover:text-gray-900 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#cde3f5] after:transition-all after:duration-300 hover:after:w-full"
           >
             Home
